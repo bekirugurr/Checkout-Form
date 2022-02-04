@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Checkout Page</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header><h1>Checkout</h1></header>
+
+    <main>
+          <form action="">
+        <div class="main__left-form--input main__left-form--input1">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email..."/>
+        </div>
+
+        <div class="main__left-form--input main__left-form--input2">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number..."/>
+        </div>
+
+        <div class="main__left-form--input main__left-form--input3">
+          <label for="fullname"></label>
+          <input type="text" id="fullname" name="full_name" placeholder="Enter your Full name..."/>
+        </div>
+
+        <div class="main__left-form--input main__left-form--input4">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="Enter your address... "/>
+        </div>
+
+        <div class="main__left-form--input main__left-form--input5">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Enter your city..."/>
+        </div>
+
+        <div class="main__left-form--input main__left-form--input6">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+              <option value="Turkey">Turkey</option>
+              <option value="Germany">Germany</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+          </select>
+
+          <label for="post_code">Post Code</label>
+          <input type="text" id="post_code" name="post_code" placeholder="Enter your postal code..."/>
+        </div>
+        <div class="main__left-form--input main__left-form--input7">
+            <input type="checkbox" id="record" name="does_record_infos"/>
+            <label for="record">See this information next time</label>
+          </div>
+          <div class="main__left-form--input main__left-form--button ">
+            <input class="main__form--continue-button" type="button" value="Continue"/>
+          </div>
+    </form>
+
+      <section>
+          <div class="products">
+              <div class="product1">
+                  <div></div>
+                  <div></div>
+              </div>
+              <div class="product2">
+                  <div></div>
+                  <div></div>
+              </div>
+          </div>
+          <div>
+              <div class="prices">
+                  <div>Shipping</div>
+                  <div>$19</div>
+              </div>
+              <div class="prices">
+                  <div>Total</div>
+                  <div>$148.98</div>
+              </div>
+          </div>
+      </section>
+    </main>
+  </body>
 </html>

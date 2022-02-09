@@ -11,82 +11,156 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <title>Checkout</title>
   </head>
   <body>
     <header><h1>Checkout</h1></header>
 
-    <main>
-          <form action="">
-        <div class="main__left-form--input main__left-form--input1">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email..."/>
-        </div>
-
-        <div class="main__left-form--input main__left-form--input2">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number..."/>
-        </div>
-
-        <div class="main__left-form--input main__left-form--input3">
-          <label for="fullname"></label>
-          <input type="text" id="fullname" name="full_name" placeholder="Enter your Full name..."/>
-        </div>
-
-        <div class="main__left-form--input main__left-form--input4">
-          <label for="address">Address</label>
-          <input type="text" id="address" name="address" placeholder="Enter your address... "/>
-        </div>
-
-        <div class="main__left-form--input main__left-form--input5">
-          <label for="city">City</label>
-          <input type="text" id="city" name="city" placeholder="Enter your city..."/>
-        </div>
-
-        <div class="main__left-form--input main__left-form--input6">
-          <label for="country">Country</label>
-          <select name="country" id="country">
-              <option value="Turkey">Turkey</option>
-              <option value="Germany">Germany</option>
-              <option value="USA">USA</option>
-              <option value="Canada">Canada</option>
-              <option value="UK">UK</option>
-          </select>
-
-          <label for="post_code">Post Code</label>
-          <input type="text" id="post_code" name="post_code" placeholder="Enter your postal code..."/>
-        </div>
-        <div class="main__left-form--input main__left-form--input7">
-            <input type="checkbox" id="record" name="does_record_infos"/>
-            <label for="record">See this information next time</label>
+    <main class="container">
+      <form class="form" action="">
+        <h3 class="form__title">Contact Information</h3>
+        <div class="form__input-cont form__email-cont">
+          <label class="label" for="email">Email</label>
+          <div class="main__input-wrappar main__email-wrapper">
+            <input class="input" 
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..." required
+            />
+            <i class="fas fa-envelope"></i>
           </div>
-          <div class="main__left-form--input main__left-form--button ">
-            <input class="main__form--continue-button" type="button" value="Continue"/>
+        </div>
+        <div class="form__input-cont form__phone-cont">
+          <label class="label" for="phone">Phone</label>
+          <div class="main__input-wrappar main__phone-wrapper">
+            <input class="input" 
+              type="tel"
+              id="phone"
+              name="phone_number"
+              placeholder="Enter your phone number..." required
+            />
+            <i class="fas fa-phone-alt"></i>
           </div>
-    </form>
+        </div>
+        <h3 class="form__title form__second-title">Shipping Address</h3>
+        <div class="form__input-cont form__full-name-cont">
+          <label class="label" for="fullname">Full Name</label>
+          <div class="main__input-wrappar main__full-name-wrapper">
+            <input class="input" 
+              type="text"
+              id="fullname"
+              name="full_name"
+              placeholder="Enter your Full name..." required
+            />
+            <i class="fas fa-user-alt"></i>
+          </div>
+        </div>
 
-      <section>
-          <div class="products">
-              <div class="product1">
-                  <div></div>
-                  <div></div>
-              </div>
-              <div class="product2">
-                  <div></div>
-                  <div></div>
-              </div>
+        <div class="form__input-cont form__address-cont">
+          <label class="label" for="address">Address</label>
+          <div class="main__input-wrappar main__address-wrapper">
+            <input class="input" 
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter your address... " required
+            />
+            <i class="fas fa-home"></i>
+          </div>
+        </div>
+
+        <div class="form__input-cont form__city-cont">
+          <label class="label" for="city">City</label>
+          <div class="main__input-wrappar main__city-wrapper">
+            <input class="input" 
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Enter your city..." required
+            />
+            <i class="fas fa-city"></i>
+          </div>
+        </div>
+
+        <div class="form__input-cont form__country-post-cont">
+          <div>
+            <label class="label" for="country">Country</label>
+            <div class="main__input-wrappar main__country-wrapper">
+              <select  class="input " name="country" id="country" required>
+                <option value="Turkey"> Turkey </option>
+                <option value="Germany"> Germany </option>
+                <option value="USA"> USA </option>
+                <option value="Canada"> Canada </option>
+                <option value="UK"> UK </option>
+              </select>
+              <i class="fas fa-globe-europe"></i>
+            </div>
           </div>
           <div>
-              <div class="prices">
-                  <div>Shipping</div>
-                  <div>$19</div>
+            <label class="label" for="post_code">Post Code</label>
+            <div class="main__input-wrappar main__post-code-wrapper">
+              <input class="input" 
+                type="text"
+                id="post_code"
+                name="post_code"
+                placeholder="Enter your postal code..."
+              />
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="record" name="does_record_infos" />
+          <label for="record">See this information next time</label>
+        </div>
+      </form>
+
+      <section class="cart">
+        <div class="cart__products">
+          <div class="cart__product cart__product1">
+            <div class="cart__img"><img src="./IMG/photo1.png" alt=""></div>
+            <div class="cart__product-infos">
+              <h4>Vintage Backbag</h4>
+              <p class="cart__current-price">$54.99 <span class="cart__old-price">$94.99</span></p>
+              <div class="cart__product-number">
+                <i class="fas fa-plus"></i> 
+                <span>1</span>
+                <i class="fas fa-minus"></i> 
               </div>
-              <div class="prices">
-                  <div>Total</div>
-                  <div>$148.98</div>
+            </div>
+          </div>
+          <div class="cart__product cart__product2">
+            <div class="cart__img"><img src="./IMG/photo2.png" alt=""></div>
+            <div class="cart__product-infos">
+              <h4>Levi Shoes</h4>
+              <p class="cart__current-price">$74.99 <span class="cart__old-price">$124.99</span></p>
+              <div class="cart__product-number">
+                <i class="fas fa-plus"></i> 
+                <span>1</span>
+                <i class="fas fa-minus"></i> 
               </div>
           </div>
+        </div>
+        <div class="cart__prices">
+          <div class="cart__price cart__ship-price">
+            <div>Shipping</div>
+            <div>$19</div>
+          </div>
+          <div class="cart__price cart__total-price">
+            <div>Total</div>
+            <div>$148.98</div>
+          </div>
+        </div>
       </section>
     </main>
+    <div class="button-wrapper">
+      <input
+        class="button"
+        type="button"
+        value="Continue"
+      />
+    </div>
   </body>
 </html>

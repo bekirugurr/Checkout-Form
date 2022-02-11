@@ -79,7 +79,9 @@ header {
 .main__country-outer-wrapper{
   margin-right: 1rem;
 }
-
+.main__country-wrapper select{
+  background-color: white;
+}
 .checkbox {
   margin-top: 1rem;
 }
